@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  background-color: #fff;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  border-right: 1px solid;
+  flex: 10%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 7;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+section {
+  display: block;
+}
+.a-icon.a-icon-star-medium {
+  background-image: url(https://m.media-amazon.com/images/S/sash/qgGRgelkhXwysfn.png);
+  background-size: 512px 256px;
+  background-repeat: no-repeat;
+  position: relative;
+  vertical-align: text-top;
+}
+.a-icon {
+  display: inline-block;
+}
+[class*='a-icon-star'] > .a-icon-alt {
+  clip-path: circle(0);
+  left: auto;
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  line-height: normal;
+  opacity: 0;
+}
+.a-icon-alt {
+  position: absolute;
+  top: auto;
+  display: block;
+  overflow: hidden;
+}
+.a-color-base {
+  color: #0F1111!important;
+}
+.a-size-small {
+  font-size: 12px!important;
+  line-height: 16px!important;
+}
+.a-icon.a-star-medium-1 {
+  background-position: -390px -228px;
+}
+.a-icon-star-medium {
+  height: 22px;
+  width: 95px;
+  margin-right: 1px;
+  top: -2px;
+}
+
+.a-icon.a-star-medium-2 {
+  background-position: -99px -132px;
+}
+.a-icon.a-star-medium-3 {
+  background-position: -293px -180px;
+}
+.a-icon.a-star-medium-4 {
+  background-position: -2px -84px;
+}
+.a-spacing-small, .a-ws .a-ws-spacing-small {
+  margin-bottom: 8px!important;
+}
+#search #s-refinements .a-size-base {
+  line-height: 16px!important;
+}
+.a-color-base {
+  color: #0F1111!important;
+}
+.a-size-base {
+  font-size: 14px!important;
+}
+.a-text-bold {
+  font-weight: 700!important;
+}
+
+.checked {
+  color: orange;
+}
+
+ul.menu {
+  margin: 0 auto;
+  text-align: center;
+}
+ul.menu li {
+  display: inline-block;
+  height: 2em;
+}
+ul.menu a {
+  display: block;
+  width: 5em;
+  line-height: 2em;
+  background-color: #fed;
+  border-radius: 5px;
+}
+ul.menu a:hover {
+  color: #fed;
+  background-color: #abc;
+  cursor: pointer;
+}
+
+#nav-main .nav-right .flag1 {
+  background: transparent url(../img/us.png) no-repeat 11px 11px;
+  background-size: 39px;
+  padding: 7px 20px 7px 50px;
+}
